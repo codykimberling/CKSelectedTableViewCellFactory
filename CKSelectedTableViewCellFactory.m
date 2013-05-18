@@ -53,8 +53,7 @@ typedef enum : NSInteger {
 
 - (UIView *)viewForTableView:(UITableView *)tableView andCell:(UITableViewCell *)cell withPosition:(CellPosition)cellPosision
 {
-    CGFloat width = (tableView.style == UITableViewStyleGrouped) ? 302 : cell.frame.size.width;
-    CGRect frame = CGRectMake(0, 0, width, cell.frame.size.height);
+    CGRect frame = CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height);
     UIView *selectionView = [[UIView alloc] initWithFrame:frame];
     selectionView.backgroundColor = self.backgroundColor;
     
