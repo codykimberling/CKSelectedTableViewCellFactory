@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		437F0F5617A563B500EB3C3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F0F5517A563B500EB3C3F /* UIKit.framework */; };
+		437F0F5817A563B500EB3C3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F0F5717A563B500EB3C3F /* Foundation.framework */; };
+		437F0F5A17A563B500EB3C3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F0F5917A563B500EB3C3F /* CoreGraphics.framework */; };
+		437F0F6017A563B500EB3C3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 437F0F5E17A563B500EB3C3F /* InfoPlist.strings */; };
+		437F0F6217A563B500EB3C3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F0F6117A563B500EB3C3F /* main.m */; };
+		437F0F6617A563B500EB3C3F /* CKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F0F6517A563B500EB3C3F /* CKAppDelegate.m */; };
+		437F0F6817A563B500EB3C3F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F0F6717A563B500EB3C3F /* Default.png */; };
+		437F0F6A17A563B500EB3C3F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F0F6917A563B500EB3C3F /* Default@2x.png */; };
+		437F0F6C17A563B500EB3C3F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F0F6B17A563B500EB3C3F /* Default-568h@2x.png */; };
+		437F0F7417A563B600EB3C3F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F0F7317A563B600EB3C3F /* SenTestingKit.framework */; };
+		437F0F7517A563B600EB3C3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F0F5517A563B500EB3C3F /* UIKit.framework */; };
+		437F0F7617A563B600EB3C3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F0F5717A563B500EB3C3F /* Foundation.framework */; };
+		437F0F7E17A563B600EB3C3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 437F0F7C17A563B600EB3C3F /* InfoPlist.strings */; };
+		437F0F8117A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F0F8017A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		437F0F7717A563B600EB3C3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437F0F4A17A563B500EB3C3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 437F0F5117A563B500EB3C3F;
+			remoteInfo = CKSelectedTableViewCellFactory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		437F0F5217A563B500EB3C3F /* CKSelectedTableViewCellFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKSelectedTableViewCellFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		437F0F5517A563B500EB3C3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		437F0F5717A563B500EB3C3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		437F0F5917A563B500EB3C3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		437F0F5D17A563B500EB3C3F /* CKSelectedTableViewCellFactory-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CKSelectedTableViewCellFactory-Info.plist"; sourceTree = "<group>"; };
+		437F0F5F17A563B500EB3C3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		437F0F6117A563B500EB3C3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		437F0F6317A563B500EB3C3F /* CKSelectedTableViewCellFactory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CKSelectedTableViewCellFactory-Prefix.pch"; sourceTree = "<group>"; };
+		437F0F6417A563B500EB3C3F /* CKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKAppDelegate.h; sourceTree = "<group>"; };
+		437F0F6517A563B500EB3C3F /* CKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAppDelegate.m; sourceTree = "<group>"; };
+		437F0F6717A563B500EB3C3F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		437F0F6917A563B500EB3C3F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		437F0F6B17A563B500EB3C3F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		437F0F7217A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKSelectedTableViewCellFactoryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		437F0F7317A563B600EB3C3F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		437F0F7B17A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CKSelectedTableViewCellFactoryTests-Info.plist"; sourceTree = "<group>"; };
+		437F0F7D17A563B600EB3C3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		437F0F7F17A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKSelectedTableViewCellFactoryTests.h; sourceTree = "<group>"; };
+		437F0F8017A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKSelectedTableViewCellFactoryTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		437F0F4F17A563B500EB3C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437F0F5617A563B500EB3C3F /* UIKit.framework in Frameworks */,
+				437F0F5817A563B500EB3C3F /* Foundation.framework in Frameworks */,
+				437F0F5A17A563B500EB3C3F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437F0F6E17A563B600EB3C3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437F0F7417A563B600EB3C3F /* SenTestingKit.framework in Frameworks */,
+				437F0F7517A563B600EB3C3F /* UIKit.framework in Frameworks */,
+				437F0F7617A563B600EB3C3F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		437F0F4917A563B500EB3C3F = {
+			isa = PBXGroup;
+			children = (
+				437F0F5B17A563B500EB3C3F /* CKSelectedTableViewCellFactory */,
+				437F0F7917A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests */,
+				437F0F5417A563B500EB3C3F /* Frameworks */,
+				437F0F5317A563B500EB3C3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		437F0F5317A563B500EB3C3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				437F0F5217A563B500EB3C3F /* CKSelectedTableViewCellFactory.app */,
+				437F0F7217A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		437F0F5417A563B500EB3C3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				437F0F5517A563B500EB3C3F /* UIKit.framework */,
+				437F0F5717A563B500EB3C3F /* Foundation.framework */,
+				437F0F5917A563B500EB3C3F /* CoreGraphics.framework */,
+				437F0F7317A563B600EB3C3F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		437F0F5B17A563B500EB3C3F /* CKSelectedTableViewCellFactory */ = {
+			isa = PBXGroup;
+			children = (
+				437F0F6417A563B500EB3C3F /* CKAppDelegate.h */,
+				437F0F6517A563B500EB3C3F /* CKAppDelegate.m */,
+				437F0F5C17A563B500EB3C3F /* Supporting Files */,
+			);
+			path = CKSelectedTableViewCellFactory;
+			sourceTree = "<group>";
+		};
+		437F0F5C17A563B500EB3C3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				437F0F5D17A563B500EB3C3F /* CKSelectedTableViewCellFactory-Info.plist */,
+				437F0F5E17A563B500EB3C3F /* InfoPlist.strings */,
+				437F0F6117A563B500EB3C3F /* main.m */,
+				437F0F6317A563B500EB3C3F /* CKSelectedTableViewCellFactory-Prefix.pch */,
+				437F0F6717A563B500EB3C3F /* Default.png */,
+				437F0F6917A563B500EB3C3F /* Default@2x.png */,
+				437F0F6B17A563B500EB3C3F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		437F0F7917A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				437F0F7F17A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.h */,
+				437F0F8017A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.m */,
+				437F0F7A17A563B600EB3C3F /* Supporting Files */,
+			);
+			path = CKSelectedTableViewCellFactoryTests;
+			sourceTree = "<group>";
+		};
+		437F0F7A17A563B600EB3C3F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				437F0F7B17A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests-Info.plist */,
+				437F0F7C17A563B600EB3C3F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		437F0F5117A563B500EB3C3F /* CKSelectedTableViewCellFactory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437F0F8417A563B600EB3C3F /* Build configuration list for PBXNativeTarget "CKSelectedTableViewCellFactory" */;
+			buildPhases = (
+				437F0F4E17A563B500EB3C3F /* Sources */,
+				437F0F4F17A563B500EB3C3F /* Frameworks */,
+				437F0F5017A563B500EB3C3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CKSelectedTableViewCellFactory;
+			productName = CKSelectedTableViewCellFactory;
+			productReference = 437F0F5217A563B500EB3C3F /* CKSelectedTableViewCellFactory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		437F0F7117A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437F0F8717A563B600EB3C3F /* Build configuration list for PBXNativeTarget "CKSelectedTableViewCellFactoryTests" */;
+			buildPhases = (
+				437F0F6D17A563B600EB3C3F /* Sources */,
+				437F0F6E17A563B600EB3C3F /* Frameworks */,
+				437F0F6F17A563B600EB3C3F /* Resources */,
+				437F0F7017A563B600EB3C3F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				437F0F7817A563B600EB3C3F /* PBXTargetDependency */,
+			);
+			name = CKSelectedTableViewCellFactoryTests;
+			productName = CKSelectedTableViewCellFactoryTests;
+			productReference = 437F0F7217A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		437F0F4A17A563B500EB3C3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CK;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Cody Kimberling";
+			};
+			buildConfigurationList = 437F0F4D17A563B500EB3C3F /* Build configuration list for PBXProject "CKSelectedTableViewCellFactory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 437F0F4917A563B500EB3C3F;
+			productRefGroup = 437F0F5317A563B500EB3C3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				437F0F5117A563B500EB3C3F /* CKSelectedTableViewCellFactory */,
+				437F0F7117A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		437F0F5017A563B500EB3C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437F0F6017A563B500EB3C3F /* InfoPlist.strings in Resources */,
+				437F0F6817A563B500EB3C3F /* Default.png in Resources */,
+				437F0F6A17A563B500EB3C3F /* Default@2x.png in Resources */,
+				437F0F6C17A563B500EB3C3F /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437F0F6F17A563B600EB3C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437F0F7E17A563B600EB3C3F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		437F0F7017A563B600EB3C3F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		437F0F4E17A563B500EB3C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437F0F6217A563B500EB3C3F /* main.m in Sources */,
+				437F0F6617A563B500EB3C3F /* CKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437F0F6D17A563B600EB3C3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437F0F8117A563B600EB3C3F /* CKSelectedTableViewCellFactoryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		437F0F7817A563B600EB3C3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 437F0F5117A563B500EB3C3F /* CKSelectedTableViewCellFactory */;
+			targetProxy = 437F0F7717A563B600EB3C3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		437F0F5E17A563B500EB3C3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				437F0F5F17A563B500EB3C3F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		437F0F7C17A563B600EB3C3F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				437F0F7D17A563B600EB3C3F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		437F0F8217A563B600EB3C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		437F0F8317A563B600EB3C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		437F0F8517A563B600EB3C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CKSelectedTableViewCellFactory/CKSelectedTableViewCellFactory-Prefix.pch";
+				INFOPLIST_FILE = "CKSelectedTableViewCellFactory/CKSelectedTableViewCellFactory-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		437F0F8617A563B600EB3C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CKSelectedTableViewCellFactory/CKSelectedTableViewCellFactory-Prefix.pch";
+				INFOPLIST_FILE = "CKSelectedTableViewCellFactory/CKSelectedTableViewCellFactory-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		437F0F8817A563B600EB3C3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CKSelectedTableViewCellFactory.app/CKSelectedTableViewCellFactory";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CKSelectedTableViewCellFactory/CKSelectedTableViewCellFactory-Prefix.pch";
+				INFOPLIST_FILE = "CKSelectedTableViewCellFactoryTests/CKSelectedTableViewCellFactoryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		437F0F8917A563B600EB3C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CKSelectedTableViewCellFactory.app/CKSelectedTableViewCellFactory";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CKSelectedTableViewCellFactory/CKSelectedTableViewCellFactory-Prefix.pch";
+				INFOPLIST_FILE = "CKSelectedTableViewCellFactoryTests/CKSelectedTableViewCellFactoryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		437F0F4D17A563B500EB3C3F /* Build configuration list for PBXProject "CKSelectedTableViewCellFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437F0F8217A563B600EB3C3F /* Debug */,
+				437F0F8317A563B600EB3C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		437F0F8417A563B600EB3C3F /* Build configuration list for PBXNativeTarget "CKSelectedTableViewCellFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437F0F8517A563B600EB3C3F /* Debug */,
+				437F0F8617A563B600EB3C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		437F0F8717A563B600EB3C3F /* Build configuration list for PBXNativeTarget "CKSelectedTableViewCellFactoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437F0F8817A563B600EB3C3F /* Debug */,
+				437F0F8917A563B600EB3C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 437F0F4A17A563B500EB3C3F /* Project object */;
+}
