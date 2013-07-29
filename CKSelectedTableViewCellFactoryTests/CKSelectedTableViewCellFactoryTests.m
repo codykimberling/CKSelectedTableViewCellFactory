@@ -22,7 +22,6 @@
 @property (nonatomic) NSInteger numberOfRows;
 
 @property (nonatomic) id mockBezierPath;
-@property (nonatomic) id cgPath;
 
 @end
 
@@ -48,8 +47,6 @@
     self.groupedTableView.dataSource = self;
     
     self.mockBezierPath = [OCMockObject niceMockForClass:UIBezierPath.class];
-    
-//    [[[self.mockBezierPath stub] andReturn:self.cgPath] CGPath];
 }
 
 - (void)tearDown
