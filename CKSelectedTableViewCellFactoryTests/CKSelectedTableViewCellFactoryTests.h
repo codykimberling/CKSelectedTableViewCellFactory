@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface CKSelectedTableViewCellFactoryTests : SenTestCase
+@interface CKSelectedTableViewCellFactoryTests : SenTestCase<UITableViewDataSource>
 
 @end

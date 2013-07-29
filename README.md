@@ -14,6 +14,4 @@ and set the Selected background color and corner radius, defaults are [UIColor l
 
 To use in a UITableView:
 
-    cell.selectedBackgroundView = [[CKSelectedTableViewCellFactory sharedSelectedTableViewCellFactory] 
-                selectedBackgroundViewForTableViewCell:cell inTableView:tableView atIndexPath:indexPath];
-
+    cell.selectedBackgroundView = [[CKSelectedTableViewCellFactory sharedSelectedTableViewCellFactory] selectedBackgroundViewForTableViewCell:cell inTableView:tableView atIndexPath:indexPath];
