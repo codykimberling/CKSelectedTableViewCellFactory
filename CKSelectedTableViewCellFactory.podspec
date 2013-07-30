@@ -5,9 +5,9 @@ Pod::Spec.new do |s|
   s.license      =  {:type => 'BSD'}
   s.homepage     =  'https://github.com/codykimberling/CKSelectedTableViewCellFactory/'
   s.authors      =  {'Cody Kimberling' => 'clkimberling@gmail.com'}
-  s.summary      =  'Selected Background factory UITableViewCell'
-  s.description  =  'Selected Background factory UITableViewCell.  Works with Plain and Grouped TableViews and allows for custom corner radius and backgroundColor'
+  s.summary      =  'Selected Background factory UITableViewCell.'
+  s.description  =  'Selected Background factory UITableViewCell.  Works with Plain and Grouped TableViews and allows for custom corner radius and backgroundColor.'
   s.source       =  {:git => 'https://github.com/codykimberling/CKSelectedTableViewCellFactory.git', :tag => '0.0.1'}
-  s.source_files =  'CKSelectedTableViewCellFactory*.{h,m}'
+  s.source_files =  'CKSelectedTableViewCellFactory.{h,m}'
   s.requires_arc = 	true
 end
