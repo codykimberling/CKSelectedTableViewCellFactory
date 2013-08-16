@@ -27,7 +27,7 @@ typedef enum : NSInteger {
         if (!sharedInstance) {
             sharedInstance = [[super allocWithZone:nil] init];
             sharedInstance.cornerRadius = 5.0;
-            sharedInstance.backgroundColor = [UIColor lightGrayColor];
+            sharedInstance.backgroundColor = UIColor.lightGrayColor;
         }
     });
     return sharedInstance;
@@ -59,7 +59,8 @@ typedef enum : NSInteger {
 
 - (UIView *)viewForTableView:(UITableView *)tableView andCell:(UITableViewCell *)cell withPosition:(CellPosition)cellPosision
 {
-    CGRect frame = CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height);
+    CGFloat width = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? 302 : 680;
+    CGRect frame = CGRectMake(0, 0, width, cell.frame.size.height);
     UIView *selectionView = [[UIView alloc] initWithFrame:frame];
     selectionView.backgroundColor = self.backgroundColor;
     
