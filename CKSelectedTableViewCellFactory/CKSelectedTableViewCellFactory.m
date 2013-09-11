@@ -59,7 +59,16 @@ typedef enum : NSInteger {
 
 - (UIView *)viewForTableView:(UITableView *)tableView andCell:(UITableViewCell *)cell withPosition:(CellPosition)cellPosision
 {
-    CGFloat width = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? 302 : 680;
+    CGFloat width;
+    
+    BOOL portraitOrientation = UIDeviceOrientationIsPortrait(UIApplication.sharedApplication.statusBarOrientation);
+    
+    if(portraitOrientation){
+        width = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? 302 : 680;
+    }else{
+        width = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? 550 : 936;
+    }
+    
     CGRect frame = CGRectMake(0, 0, width, cell.frame.size.height);
     UIView *selectionView = [[UIView alloc] initWithFrame:frame];
     selectionView.backgroundColor = self.backgroundColor;
