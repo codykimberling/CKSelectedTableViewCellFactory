@@ -9,8 +9,26 @@
 #import "CKSelectedTableViewCellFactory.h"
 #import <QuartzCore/QuartzCore.h>
 
+#pragma mark - Singleton Constants
+
 static CKSelectedTableViewCellFactory *sharedInstance = nil;
 static dispatch_once_t once_token = 0;
+
+#pragma mark - Constants Pre iOS 7
+
+static int kPreIos7PortraitWidthPhone = 302;
+static int kPreIos7PortraitWidthPad = 680;
+
+static int kPreIos7LandscapeWidthPhone = 550;
+static int kPreIos7LandscapeWidthPad = 936;
+
+#pragma mark - Constants Post iOS 7
+
+static int kPostIos7PortraitWidthPhone = 320;
+static int kPostIos7PortraitWidthPad = 680;
+
+static int kPostIos7LandscapeWidthPhone = 550;
+static int kPostIos7LandscapeWidthPad = 936;
 
 typedef enum : NSInteger {
     CellPositionGroupedTop,
@@ -18,6 +36,13 @@ typedef enum : NSInteger {
     CellPositionGroupedBottom,
     CellPositionGroupedSingle
 } CellPosition;
+
+@interface CKSelectedTableViewCellFactory ()
+
+@property (nonatomic) CGFloat widthPortrait;
+@property (nonatomic) CGFloat widthLandscape;
+
+@end
 
 @implementation CKSelectedTableViewCellFactory
 
@@ -28,6 +53,15 @@ typedef enum : NSInteger {
             sharedInstance = [[super allocWithZone:nil] init];
             sharedInstance.cornerRadius = 5.0;
             sharedInstance.backgroundColor = UIColor.lightGrayColor;
+
+            if(sharedInstance.isPhoneIdiom){
+                sharedInstance.widthPortrait = (sharedInstance.isDevicePreIosSeven) ? kPreIos7PortraitWidthPhone : kPostIos7PortraitWidthPhone;
+                sharedInstance.widthLandscape = (sharedInstance.isDevicePreIosSeven) ? kPreIos7LandscapeWidthPhone : kPostIos7LandscapeWidthPhone;
+            }else{
+                sharedInstance.widthPortrait = (sharedInstance.isDevicePreIosSeven) ? kPreIos7PortraitWidthPad : kPostIos7PortraitWidthPad;
+                sharedInstance.widthLandscape = (sharedInstance.isDevicePreIosSeven) ? kPreIos7LandscapeWidthPad : kPostIos7LandscapeWidthPad;
+            }
+            
         }
     });
     return sharedInstance;
@@ -44,7 +78,7 @@ typedef enum : NSInteger {
     
     if(tableView.style == UITableViewStyleGrouped){
         
-        int numberOfRows = [tableView numberOfRowsInSection:indexPath.section];
+        NSInteger numberOfRows = [tableView numberOfRowsInSection:indexPath.section];
         
         if(numberOfRows == 1){
             cellPosition = CellPositionGroupedSingle;
@@ -59,19 +93,18 @@ typedef enum : NSInteger {
 
 - (UIView *)viewForTableView:(UITableView *)tableView andCell:(UITableViewCell *)cell withPosition:(CellPosition)cellPosision
 {
-    CGFloat width;
     
     BOOL portraitOrientation = UIDeviceOrientationIsPortrait(UIApplication.sharedApplication.statusBarOrientation);
     
-    if(portraitOrientation){
-        width = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? 302 : 680;
-    }else{
-        width = UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone ? 550 : 936;
-    }
+    CGFloat width = (portraitOrientation) ? self.widthPortrait : self.widthLandscape;
     
     CGRect frame = CGRectMake(0, 0, width, cell.frame.size.height);
     UIView *selectionView = [[UIView alloc] initWithFrame:frame];
     selectionView.backgroundColor = self.backgroundColor;
+    
+    if(!self.isDevicePreIosSeven){
+        return selectionView;
+    }
     
     switch (cellPosision) {
         case CellPositionGroupedTop:
@@ -105,6 +138,16 @@ typedef enum : NSInteger {
     maskLayer.borderWidth = 0.f;
     
     return maskLayer;
+}
+
+- (BOOL)isDevicePreIosSeven
+{
+    return (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1);
+}
+
+- (BOOL)isPhoneIdiom
+{
+    return (UIDevice.currentDevice.userInterfaceIdiom == UIUserInterfaceIdiomPhone);
 }
 
 @end
